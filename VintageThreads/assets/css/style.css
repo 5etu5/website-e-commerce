@@ -1,0 +1,286 @@
+/* Vintage Threads - Custom Styles */
+
+:root {
+    --vintage-brown: #8B4513;
+    --vintage-cream: #F5F5DC;
+    --vintage-gold: #DAA520;
+    --vintage-green: #556B2F;
+    --vintage-navy: #2F4F4F;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.navbar-brand {
+    color: var(--vintage-brown) !important;
+    font-family: 'Georgia', serif;
+}
+
+.nav-link {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--vintage-brown) !important;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f5f5dc" width="1200" height="600"/><text x="600" y="300" font-family="Georgia" font-size="48" text-anchor="middle" fill="%238B4513">Vintage Vibes</text></svg>');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.btn-vintage {
+    background-color: var(--vintage-brown);
+    border-color: var(--vintage-brown);
+    color: white;
+    padding: 12px 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn-vintage:hover {
+    background-color: var(--vintage-gold);
+    border-color: var(--vintage-gold);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    height: 300px;
+    background-color: var(--vintage-cream);
+    background-image: repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 10px,
+        rgba(139, 69, 19, 0.1) 10px,
+        rgba(139, 69, 19, 0.1) 20px
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--vintage-brown);
+    position: relative;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-info {
+    padding: 1.5rem;
+}
+
+.product-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: var(--vintage-navy);
+}
+
+.product-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--vintage-brown);
+    margin-bottom: 0.5rem;
+}
+
+.product-condition {
+    font-size: 0.9rem;
+    color: var(--vintage-green);
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Category Headers */
+.category-header {
+    background: linear-gradient(135deg, var(--vintage-cream), white);
+    padding: 3rem 0;
+    text-align: center;
+    border-bottom: 3px solid var(--vintage-brown);
+}
+
+.category-title {
+    font-size: 2.5rem;
+    color: var(--vintage-brown);
+    margin-bottom: 1rem;
+}
+
+/* Blog Styles */
+.blog-card {
+    border: none;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-3px);
+}
+
+.blog-image {
+    height: 200px;
+    background: var(--vintage-cream);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--vintage-brown);
+    font-size: 2rem;
+}
+
+/* Cart Styles */
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-summary {
+    background: var(--vintage-cream);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+/* Admin Styles */
+.admin-header {
+    background: var(--vintage-navy);
+    color: white;
+    padding: 1rem 0;
+}
+
+.admin-sidebar {
+    background: #f8f9fa;
+    min-height: calc(100vh - 100px);
+    padding: 2rem 1rem;
+}
+
+.admin-nav-link {
+    color: var(--vintage-navy);
+    padding: 0.75rem 1rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    display: block;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.admin-nav-link:hover,
+.admin-nav-link.active {
+    background-color: var(--vintage-brown);
+    color: white;
+    text-decoration: none;
+}
+
+/* Form Styles */
+.form-vintage {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.form-vintage .form-control {
+    border-radius: 5px;
+    border: 2px solid #e0e0e0;
+    padding: 0.75rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-vintage .form-control:focus {
+    border-color: var(--vintage-brown);
+    box-shadow: 0 0 0 0.2rem rgba(139, 69, 19, 0.25);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .product-card {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Utility Classes */
+.text-vintage-brown {
+    color: var(--vintage-brown) !important;
+}
+
+.bg-vintage-cream {
+    background-color: var(--vintage-cream) !important;
+}
+
+.border-vintage {
+    border-color: var(--vintage-brown) !important;
+}
+
+/* Loading and States */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
